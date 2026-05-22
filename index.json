@@ -1,0 +1,16 @@
+{
+  "packages": {
+    "com.hyperxtalk.library.test": {
+      "title": "hxtpm Test Library",
+      "description": "Minimal test library for verifying the hxtpm package manager install pipeline. Call hxtpmTestPing() after install to confirm the library is live.",
+      "author": "HyperXTalk",
+      "type": "lcs",
+      "license": "gpl-3.0",
+      "repository": "https://gist.github.com/emily-elizabeth/e0f8c61b7ed48b6b422f5cd113b20cbb",
+      "latest": "1.0.0",
+      "versions": [
+        "1.0.0"
+      ]
+    }
+  }
+}
