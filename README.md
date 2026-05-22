@@ -92,3 +92,9 @@ Package names follow reverse-DNS notation:
 - Community packages: use your own domain or GitHub username, e.g. `com.example.library.foo` or `io.github.username.foo`
 
 Libraries and widgets that ship built into HyperXTalk are not listed here — they are always available without installation.
+
+## Available packages
+
+| Package | Title | Type | Latest | Description |
+|---------|-------|------|--------|-------------|
+| [`com.hyperxtalk.library.test`](packages/com.hyperxtalk.library.test) | hxtpm Test Library | LCS | `1.0.0` | Minimal test library for verifying the hxtpm package manager install pipeline. C… |
