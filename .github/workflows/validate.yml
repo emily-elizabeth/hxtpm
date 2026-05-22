@@ -1,0 +1,17 @@
+name: Validate package submissions
+
+on:
+  pull_request:
+    paths:
+      - 'packages/**'
+
+jobs:
+  validate:
+    name: Validate packages
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate package.json files
+        run: python3 .github/scripts/validate.py
