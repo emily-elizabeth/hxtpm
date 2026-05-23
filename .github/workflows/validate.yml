@@ -9,9 +9,25 @@ jobs:
   validate:
     name: Validate packages
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Validate package.json files
         run: python3 .github/scripts/validate.py
+
+      - name: Rebuild index.json
+        run: python3 .github/scripts/build_index.py
+
+      - name: Commit updated index.json to PR branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.json README.md
+          git diff --cached --quiet || git commit -m "chore: regenerate index.json"
+          git push
