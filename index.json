@@ -1,5 +1,17 @@
 {
   "packages": {
+    "org.openxtalk.library.fsevents": {
+      "title": "macOS FSEvents",
+      "description": "Native LCE library wrapping the macOS FSEvents API to provide real-time filesystem monitoring. Dispatches messages such as fseventsFileCreated, fseventsFileModified, and fseventsFileDeleted up the message hierarchy as events occur.",
+      "author": "emily-elizabeth",
+      "type": "lce",
+      "license": "gpl-3.0",
+      "repository": "https://github.com/emily-elizabeth/macOSfsevents",
+      "latest": "1.0.0",
+      "versions": [
+        "1.0.0"
+      ]
+    },
     "com.hyperxtalk.library.test": {
       "title": "hxtpm Test Library",
       "description": "Minimal test library for verifying the hxtpm package manager install pipeline. Call hxtpmTestPing() after install to confirm the library is live.",
