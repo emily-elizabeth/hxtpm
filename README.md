@@ -8,8 +8,8 @@ This repository is the official package registry for HyperXTalk. It contains an 
 
 | Type  | Description |
 |-------|-------------|
-| `lcs` | Script library (`.livecodescript`) — installed to the user libraries folder |
-| `lcb` | LCB extension (`.lcb`) — compiled locally and installed to the user plugins folder |
+| `lcs` | Script library (`.livecodescript`) — installed to the user libraries folder and loaded immediately |
+| `lce` | LiveCode extension (`.lce` zip) — pre-compiled extension package installed to the user extensions folder via the IDE extension manager, loaded without an IDE restart |
 
 ---
 
@@ -54,14 +54,14 @@ packages/
 | `author` | ✓ | Your name or organisation. |
 | `license` | ✓ | SPDX license identifier (e.g. `mit`, `gpl-3.0`, `apache-2.0`). |
 | `repository` | ✓ | URL of the package's source repository. |
-| `type` | ✓ | `lcs` or `lcb`. |
+| `type` | ✓ | `lcs` or `lce`. |
 | `versions` | ✓ | Object mapping version strings to version entries (see below). |
 
 #### Version entry fields
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `source` | ✓ | Direct URL to the installable file. For `lcs`, a URL to the `.livecodescript` file. For `lcb`, a URL to a zip containing the LCB source. |
+| `source` | ✓ | Direct URL to the installable file. For `lcs`, a URL to the `.livecodescript` file. For `lce`, a URL to the pre-compiled `.lce` zip package. |
 | `checksum` | ✓ | SHA-256 checksum of the file at `source`, formatted as `sha256:<hex>`. |
 | `min_engine` | | Minimum HyperXTalk engine version required. |
 
@@ -97,4 +97,4 @@ Libraries and widgets that ship built into HyperXTalk are not listed here — th
 
 | Package | Title | Type | Latest | Description |
 |---------|-------|------|--------|-------------|
-| [`com.hyperxtalk.library.test`](packages/com.hyperxtalk.library.test) | hxtpm Test Library | LCS | `1.0.0` | Minimal test library for verifying the hxtpm package manager install pipeline. C… |
+| [`com.hyperxtalk.library.test`](packages/com.hyperxtalk.library.test) | hxtpm Test Library | lcs | `1.0.0` | Minimal test library for verifying the hxtpm package manager install pipeline. |
