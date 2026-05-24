@@ -9,7 +9,7 @@
   "platform": "macos",
   "versions": {
     "1.0.0": {
-      "source": "https://github.com/emily-elizabeth/macOSfsevents/raw/refs/heads/main/org.openxtalk.library.fsevents.1.0.0.lce",
+      "source": "https://raw.githubusercontent.com/emily-elizabeth/macOSfsevents/main/org.openxtalk.library.fsevents.1.0.0.lce",
       "checksum": "sha256:5d7b64635b4903a0ab19d774f2b49a8cf0258b84ca4a55cdf1d1549c5035d388"
     }
   }
