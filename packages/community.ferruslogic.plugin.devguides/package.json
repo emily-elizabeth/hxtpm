@@ -1,0 +1,14 @@
+{
+  "name": "community.ferruslogic.plugin.devguides",
+  "title": "DevGuides",
+  "description": "LiveCode IDE plugin that shows smart alignment guides and pixel distances while moving or resizing controls, making it easy to design well-spaced, aligned interfaces.",
+  "author": "FerrusLogic Team",
+  "repository": "https://github.com/DTByte-Ltd/DevGuides",
+  "type": "lcp",
+  "versions": {
+    "1.0.7": {
+      "source": "https://raw.githubusercontent.com/DTByte-Ltd/DevGuides/refs/heads/main/DevGuides.livecodescript",
+      "checksum": "sha256:d91a9102a296a4cca332e62a849020e9b4570c6c8f458e34ce6fa87a872710f2"
+    }
+  }
+}
