@@ -98,4 +98,5 @@ Libraries and widgets that ship built into HyperXTalk are not listed here — th
 | Package | Title | Type | Latest | Description |
 |---------|-------|------|--------|-------------|
 | [`com.hyperxtalk.library.test`](packages/com.hyperxtalk.library.test) | hxtpm Test Library | LCS | `1.0.0` | Minimal test library for verifying the hxtpm package manager install pipeline. C… |
+| [`community.ferruslogic.plugin.devguides`](packages/community.ferruslogic.plugin.devguides) | DevGuides | LCP | `1.0.7` | LiveCode IDE plugin that shows smart alignment guides and pixel distances while … |
 | [`org.openxtalk.library.fsevents`](packages/org.openxtalk.library.fsevents) | macOS FSEvents | LCE | `1.0.0` | Native LCE library wrapping the macOS FSEvents API to provide real-time filesyst… |

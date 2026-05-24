@@ -12,6 +12,18 @@
         "1.0.0"
       ]
     },
+    "community.ferruslogic.plugin.devguides": {
+      "title": "DevGuides",
+      "description": "LiveCode IDE plugin that shows smart alignment guides and pixel distances while moving or resizing controls, making it easy to design well-spaced, aligned interfaces.",
+      "author": "FerrusLogic Team",
+      "type": "lcp",
+      "license": "",
+      "repository": "https://github.com/DTByte-Ltd/DevGuides",
+      "latest": "1.0.7",
+      "versions": [
+        "1.0.7"
+      ]
+    },
     "org.openxtalk.library.fsevents": {
       "title": "macOS FSEvents",
       "description": "Native LCE library wrapping the macOS FSEvents API to provide real-time filesystem monitoring. Dispatches messages such as fseventsFileCreated, fseventsFileModified, and fseventsFileDeleted up the message hierarchy as events occur.",
@@ -22,17 +34,6 @@
       "latest": "1.0.0",
       "versions": [
         "1.0.0"
-      ]
-    },
-    "community.ferruslogic.plugin.devguides": {
-      "title": "DevGuides",
-      "description": "LiveCode IDE plugin that shows smart alignment guides and pixel distances while moving or resizing controls, making it easy to design well-spaced, aligned interfaces.",
-      "author": "FerrusLogic Team",
-      "type": "lcp",
-      "repository": "https://github.com/DTByte-Ltd/DevGuides",
-      "latest": "1.0.7",
-      "versions": [
-        "1.0.7"
       ]
     }
   }
