@@ -1,0 +1,16 @@
+{
+  "name": "com.hyperxtalk.macosfingerprint",
+  "title": "macOS Fingerprint Authentication",
+  "description": "Native LCE library providing Touch ID and passcode authentication on macOS via the Local Authentication framework. Exposes macBiometricAuthIsAvailable(), macAuthenticateWithBiometrics(pReason), and macAuthenticateWithPasscode(pReason).",
+  "author": "HyperXTalk",
+  "license": "community",
+  "repository": "https://github.com/emily-elizabeth/hxtpm",
+  "type": "lce",
+  "platform": "macos",
+  "versions": {
+    "1.0.0": {
+      "source": "https://raw.githubusercontent.com/emily-elizabeth/hxtpm/main/packages/com.hyperxtalk.macosfingerprint/com.hyperxtalk.macosfingerprint.1.0.0.lce",
+      "checksum": "sha256:bd7608c2bf17fe16722d63665628aeb92752f1065864ad5e2deea057d44edb1b"
+    }
+  }
+}
