@@ -10,7 +10,7 @@
   "versions": {
     "1.0.0": {
       "source": "https://raw.githubusercontent.com/emily-elizabeth/hxtpm/main/packages/com.hyperxtalk.macosfingerprint/com.hyperxtalk.macosfingerprint.1.0.0.lce",
-      "checksum": "sha256:bd7608c2bf17fe16722d63665628aeb92752f1065864ad5e2deea057d44edb1b"
+      "checksum": "sha256:f850c3e8ee3fbe2cce1460d46ee6c50e54d37369643ec39a57b8ab1f66e4a340"
     }
   }
 }
