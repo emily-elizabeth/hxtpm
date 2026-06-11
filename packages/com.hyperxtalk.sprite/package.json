@@ -1,0 +1,13 @@
+{
+  "name": "com.hyperxtalk.spriteengine",
+  "title": "Sprite Engine",
+  "type": "multi",
+  "versions": {
+    "1.0.0": {
+      "files": [
+        { "type": "lce", "source": "com.hyperxtalk.sprite.lce",          "checksum": "sha256:…" },
+        { "type": "lcs", "source": "sprite-engine.livecodescript",       "checksum": "sha256:…" }
+      ]
+    }
+  }
+}
