@@ -24,6 +24,18 @@
         "1.0.0"
       ]
     },
+    "com.hyperxtalk.spriteengine": {
+      "title": "Sprite Engine",
+      "description": "Sprite engine to build side scrolling games.",
+      "author": "HyperXTalk",
+      "type": "multi",
+      "license": "GPLv3",
+      "repository": "https://github.com/emily-elizabeth/hxtpm",
+      "latest": "1.0.0",
+      "versions": [
+        "1.0.0"
+      ]
+    },
     "community.ferruslogic.plugin.devguides": {
       "title": "DevGuides",
       "description": "LiveCode IDE plugin that shows smart alignment guides and pixel distances while moving or resizing controls, making it easy to design well-spaced, aligned interfaces.",
