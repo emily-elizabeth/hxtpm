@@ -6,7 +6,7 @@
     "1.0.0": {
       "files": [
         { "type": "lce", "source": "com.hyperxtalk.sprite.lce",          "checksum": "sha256:af08e140adc52dcf03d951d12e9edf0ea3e1fe427381ca5df2fc55bff7397865" },
-        { "type": "lcs", "source": "sprite-engine.livecodescript",       "checksum": "sha256:…" }
+        { "type": "lcs", "source": "sprite-engine.livecodescript",       "checksum": "sha256:4d0769b44ac4a6c546962c5ab48e03e61b7e89234cb9a74429edbc9d92d07ff2" }
       ]
     }
   }
