@@ -26,11 +26,11 @@
     },
     "com.hyperxtalk.spriteengine": {
       "title": "Sprite Engine",
-      "description": "Create sprite-based side-scrolling games",
-      "author": "HyperXTalk",
+      "description": "",
+      "author": "",
       "type": "multi",
-      "license": "GPLv3",
-      "repository": "https://github.com/emily-elizabeth/hxtpm",
+      "license": "",
+      "repository": "",
       "latest": "1.0.0",
       "versions": [
         "1.0.0"
