@@ -105,20 +105,20 @@ command setSpriteCanvas pName
     -- loop from the LCS side instead.  _hxtSpriteTick sends itself repeatedly
     -- using LiveCode's own send-in-time mechanism.
     if the platform is "Win32" then
-        send "_hxtSpriteTick" to me in 16 milliseconds
+        send "_hxtSpriteTick" to this card in 16 milliseconds
     end if
 end setSpriteCanvas
 
 -- Windows game loop driver.  Sends a manual "tick" command to the widget
 -- then reschedules itself.  Only used when the platform is Win32.
+-- Must send to "this card" (not "me") so the handler fires in the game
+-- card's context, where spriteCanvasNum() can find the widget.
 on _hxtSpriteTick
     local tN
     put spriteCanvasNum() into tN
     if tN > 0 then
-        if the running of control tN of this card then
-            set the spriteCommand of control tN of this card to "manualTick"
-            send "_hxtSpriteTick" to me in 16 milliseconds
-        end if
+        set the spriteCommand of control tN of this card to "manualTick"
+        send "_hxtSpriteTick" to this card in 16 milliseconds
     end if
 end _hxtSpriteTick
 
