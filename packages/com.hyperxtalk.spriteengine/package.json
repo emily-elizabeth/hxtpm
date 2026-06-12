@@ -5,7 +5,7 @@
   "versions": {
     "1.0.0": {
       "files": [
-        { "type": "lce", "source": "https://raw.githubusercontent.com/emily-elizabeth/hxtpm/main/packages/com.hyperxtalk.spriteengine/com.hyperxtalk.sprite.1.0.0.lce", "checksum": "sha256:fb4882620a9a30b582fbef3f7fac15a17bf51c3ad0a757dd7fc8d7cca5ac39e6" },
+        { "type": "lce", "source": "https://raw.githubusercontent.com/emily-elizabeth/hxtpm/main/packages/com.hyperxtalk.spriteengine/com.hyperxtalk.sprite.1.0.0.lce", "checksum": "sha256:b6b9ab9566f6ccf8f2c8768c54b2129f93e23fd2b97514ed807c7fd6723f8cda" },
         { "type": "lcs", "source": "https://raw.githubusercontent.com/emily-elizabeth/hxtpm/main/packages/com.hyperxtalk.spriteengine/sprite-engine.livecodescript", "checksum": "sha256:a0681dad1ee05fb96335e49b2e35491d8e8bc79764b03c1dec66c6906c5a62f2" }
       ]
     }
