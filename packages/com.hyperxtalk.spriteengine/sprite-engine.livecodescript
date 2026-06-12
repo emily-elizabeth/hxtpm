@@ -103,25 +103,6 @@ command setSpriteCanvas pName
     end repeat
 end setSpriteCanvas
 
--- resumeSprites
--- Call this at the END of your openCard handler, after all sprites and
--- the tilemap have been set up.  On Windows it starts the LCS-driven game
--- loop (the LCB schedule timer is unreliable on that platform); on macOS
--- and other platforms it is a no-op because the LCB timer handles it.
---
--- Example:
---   on openCard
---       setSpriteCanvas "GameCanvas"
---       defineTilemap ...
---       createSprite "player", ...
---       resumeSprites
---   end openCard
-command resumeSprites
-    if the platform is "Win32" then
-        send "_hxtSpriteTick" to this card in 16 milliseconds
-    end if
-end resumeSprites
-
 -- Windows game loop driver.  Sends a manual "tick" command to the widget
 -- then reschedules itself.  Must send to "this card" (not "me") so the
 -- handler fires in the game card's context where spriteCanvasNum() works.
@@ -377,12 +358,18 @@ command pauseSprites
 end pauseSprites
 
 -- resumeSprites
--- Restart the tick loop.
+-- Restart the tick loop.  Call this at the end of openCard, after all
+-- sprites and the tilemap have been set up.  On macOS and Linux the LCB
+-- timer handles the loop; on Windows an LCS-driven loop is used instead
+-- because the LCB schedule timer is unreliable on that platform.
 command resumeSprites
     local tN
     put spriteCanvasNum() into tN
     if tN > 0 then
         set the running of control tN of this card to true
+    end if
+    if the platform is "Win32" then
+        send "_hxtSpriteTick" to this card in 16 milliseconds
     end if
 end resumeSprites
 
