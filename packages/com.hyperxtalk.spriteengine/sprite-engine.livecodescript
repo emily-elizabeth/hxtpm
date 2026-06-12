@@ -73,7 +73,7 @@ function spriteResolveImage pSource
     -- Named image object anywhere in this stack?
     if there is an image pSource then
         local tTempPath
-        put specialFolderPath("temp") & slash & "hxt_sprite_" & pSource & ".png" into tTempPath
+        put specialFolderPath("temporary") & slash & "hxt_sprite_" & pSource & ".png" into tTempPath
         export image pSource to file tTempPath as PNG
         return tTempPath
     end if
