@@ -101,18 +101,30 @@ command setSpriteCanvas pName
             exit repeat
         end if
     end repeat
-    -- On Windows, the LCB schedule timer is unreliable so we drive the game
-    -- loop from the LCS side instead.  _hxtSpriteTick sends itself repeatedly
-    -- using LiveCode's own send-in-time mechanism.
+end setSpriteCanvas
+
+-- resumeSprites
+-- Call this at the END of your openCard handler, after all sprites and
+-- the tilemap have been set up.  On Windows it starts the LCS-driven game
+-- loop (the LCB schedule timer is unreliable on that platform); on macOS
+-- and other platforms it is a no-op because the LCB timer handles it.
+--
+-- Example:
+--   on openCard
+--       setSpriteCanvas "GameCanvas"
+--       defineTilemap ...
+--       createSprite "player", ...
+--       resumeSprites
+--   end openCard
+command resumeSprites
     if the platform is "Win32" then
         send "_hxtSpriteTick" to this card in 16 milliseconds
     end if
-end setSpriteCanvas
+end resumeSprites
 
 -- Windows game loop driver.  Sends a manual "tick" command to the widget
--- then reschedules itself.  Only used when the platform is Win32.
--- Must send to "this card" (not "me") so the handler fires in the game
--- card's context, where spriteCanvasNum() can find the widget.
+-- then reschedules itself.  Must send to "this card" (not "me") so the
+-- handler fires in the game card's context where spriteCanvasNum() works.
 on _hxtSpriteTick
     local tN
     put spriteCanvasNum() into tN
