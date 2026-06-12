@@ -101,7 +101,26 @@ command setSpriteCanvas pName
             exit repeat
         end if
     end repeat
+    -- On Windows, the LCB schedule timer is unreliable so we drive the game
+    -- loop from the LCS side instead.  _hxtSpriteTick sends itself repeatedly
+    -- using LiveCode's own send-in-time mechanism.
+    if the platform is "Win32" then
+        send "_hxtSpriteTick" to me in 16 milliseconds
+    end if
 end setSpriteCanvas
+
+-- Windows game loop driver.  Sends a manual "tick" command to the widget
+-- then reschedules itself.  Only used when the platform is Win32.
+on _hxtSpriteTick
+    local tN
+    put spriteCanvasNum() into tN
+    if tN > 0 then
+        if the running of control tN of this card then
+            set the spriteCommand of control tN of this card to "manualTick"
+            send "_hxtSpriteTick" to me in 16 milliseconds
+        end if
+    end if
+end _hxtSpriteTick
 
 -- spriteCanvasNum() ‚Äî private helper that returns the control number of the target widget.
 -- Returns 0 if not found.
