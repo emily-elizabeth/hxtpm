@@ -7,7 +7,7 @@
   "repository": "https://github.com/hyperxtalk/hyperxtalk",
   "versions": {
     "1.0.0": {
-      "source": "https://raw.githubusercontent.com/emily-elizabeth/hxtpm/main/packages/com.hyperxtalk.library.appearance/appearance.livecodescript",
+      "source": "https://raw.githubusercontent.com/emily-elizabeth/hxtpm/packages/com.hyperxtalk.library.appearance/appearance.livecodescript",
       "checksum": "sha256:37b5c3447da63027e2741d1bd28ea80f437f97d9297373c3055d354439601827"
     }
   }
