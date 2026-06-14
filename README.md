@@ -97,7 +97,7 @@ Libraries and widgets that ship built into HyperXTalk are not listed here — th
 
 | Package | Title | Type | Latest | Description |
 |---------|-------|------|--------|-------------|
-| [`com.hyperxtalk.appearance`](packages/com.hyperxtalk.appearance) | Appearance Library | LCS | `1.0.0` | Dark mode-aware semantic color system. Define named color roles with light and d… |
+| [`com.hyperxtalk.library.appearance`](packages/com.hyperxtalk.library.appearance) | Appearance Library | LCS | `1.0.0` | Dark mode-aware semantic color system. Define named color roles with light and d… |
 | [`com.hyperxtalk.library.test`](packages/com.hyperxtalk.library.test) | hxtpm Test Library | LCS | `1.0.0` | Minimal test library for verifying the hxtpm package manager install pipeline. C… |
 | [`com.hyperxtalk.macosfingerprint`](packages/com.hyperxtalk.macosfingerprint) | macOS Fingerprint Authentication | LCE | `1.0.0` | Native LCE library providing Touch ID and passcode authentication on macOS via t… |
 | [`com.hyperxtalk.spriteengine`](packages/com.hyperxtalk.spriteengine) | Sprite Engine | MULTI | `1.0.0` |  |
