@@ -1,5 +1,5 @@
 {
-  "name": "appearance",
+  "name": "com.hyperxtalk.library.appearance",
   "title": "Appearance Library",
   "description": "Dark mode-aware semantic color system. Define named color roles with light and dark variants; controls annotated with cSemantic* custom properties update automatically when the OS appearance changes.",
   "author": "HyperXTalk",
