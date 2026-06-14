@@ -1,0 +1,14 @@
+{
+  "title": "Appearance Library",
+  "description": "Dark mode-aware semantic color system. Define named color roles with light and dark variants; controls annotated with cSemantic* custom properties update automatically when the OS appearance changes.",
+  "author": "HyperXTalk",
+  "type": "lcs",
+  "license": "GPL-3.0",
+  "repository": "https://github.com/hyperxtalk/hyperxtalk",
+  "versions": {
+    "1.0.0": {
+      "source": "appearance.livecodescript",
+      "checksum": "sha256:37b5c3447da63027e2741d1bd28ea80f437f97d9297373c3055d354439601827"
+    }
+  }
+}

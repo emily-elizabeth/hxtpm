@@ -48,13 +48,12 @@
         "1.0.7"
       ]
     },
-    "org.openxtalk.library.fsevents": {
-      "title": "macOS FSEvents",
-      "description": "Native LCE library wrapping the macOS FSEvents API to provide real-time filesystem monitoring. Dispatches messages such as fseventsFileCreated, fseventsFileModified, and fseventsFileDeleted up the message hierarchy as events occur.",
-      "author": "emily-elizabeth",
-      "type": "lce",
-      "license": "gpl-3.0",
-      "repository": "https://github.com/emily-elizabeth/macOSfsevents",
+    "com.hyperxtalk.library.appearance": {
+      "title": "Appearance Library",
+      "description": "Dark mode-aware semantic color system. Define named color roles with light and dark variants; controls annotated with cSemantic* custom properties update automatically when the OS appearance changes.",
+      "author": "HyperXTalk",
+      "type": "lcs",
+      "license": "GPL-3.0",
       "latest": "1.0.0",
       "versions": [
         "1.0.0"
